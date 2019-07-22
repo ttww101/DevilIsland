@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameScoreVC" customModule="DevilIsland" customModuleProvider="target">
+            <connections>
+                <outlet property="backBtn" destination="nRV-1G-gAg" id="x8X-Ra-BzN"/>
+                <outlet property="gameScoreTable" destination="bIu-FT-E0u" id="Ard-Gs-4MJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="niA-zg-LKR">
+                    <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="niA-zg-LKR" secondAttribute="height" multiplier="2208:1242" id="H4f-ez-J7b"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1pX-l2-aLN">
+                    <rect key="frame" x="173" y="10" width="390" height="394"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gamescoreback" translatesAutoresizingMaskIntoConstraints="NO" id="GkA-3k-4BJ">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="394"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="游 戏 结 果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eer-de-JEM">
+                            <rect key="frame" x="197.66666666666669" y="83.333333333333329" width="104" height="26.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bIu-FT-E0u">
+                            <rect key="frame" x="39" y="138" width="312" height="177.33333333333337"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="kCc-Tq-OuZ"/>
+                                <outlet property="delegate" destination="-1" id="4I9-6f-jSz"/>
+                            </connections>
+                        </tableView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRV-1G-gAg">
+                            <rect key="frame" x="136.66666666666669" y="318.33333333333331" width="116.66666666666669" height="53"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="nRV-1G-gAg" secondAttribute="height" multiplier="404:183" id="M50-4X-pof"/>
+                            </constraints>
+                            <state key="normal" title="回到地图" backgroundImage="st_bt01">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="backToMap:" destination="-1" eventType="touchUpInside" id="NYH-I1-wd8"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="bIu-FT-E0u" firstAttribute="width" secondItem="1pX-l2-aLN" secondAttribute="width" multiplier="0.8" id="0Gs-uH-I3v"/>
+                        <constraint firstItem="eer-de-JEM" firstAttribute="centerY" secondItem="1pX-l2-aLN" secondAttribute="centerY" multiplier="0.49" id="5pC-IK-5z3"/>
+                        <constraint firstItem="nRV-1G-gAg" firstAttribute="centerX" secondItem="1pX-l2-aLN" secondAttribute="centerX" id="9rI-Vz-xrd"/>
+                        <constraint firstAttribute="width" secondItem="1pX-l2-aLN" secondAttribute="height" multiplier="1089:1101" id="Ajy-P7-W7u"/>
+                        <constraint firstItem="bIu-FT-E0u" firstAttribute="centerX" secondItem="1pX-l2-aLN" secondAttribute="centerX" id="FUM-MQ-K1o"/>
+                        <constraint firstItem="bIu-FT-E0u" firstAttribute="height" secondItem="1pX-l2-aLN" secondAttribute="height" multiplier="0.45" id="IgI-Gg-DwE"/>
+                        <constraint firstAttribute="trailing" secondItem="GkA-3k-4BJ" secondAttribute="trailing" id="Qmg-Rs-m4k"/>
+                        <constraint firstItem="nRV-1G-gAg" firstAttribute="width" secondItem="1pX-l2-aLN" secondAttribute="width" multiplier="0.3" id="WRG-lH-iZ5"/>
+                        <constraint firstAttribute="bottom" secondItem="GkA-3k-4BJ" secondAttribute="bottom" id="XkS-ns-Ayn"/>
+                        <constraint firstItem="GkA-3k-4BJ" firstAttribute="leading" secondItem="1pX-l2-aLN" secondAttribute="leading" id="iNx-P2-vkr"/>
+                        <constraint firstItem="GkA-3k-4BJ" firstAttribute="top" secondItem="1pX-l2-aLN" secondAttribute="top" id="lcG-Oo-r4l"/>
+                        <constraint firstItem="eer-de-JEM" firstAttribute="centerX" secondItem="1pX-l2-aLN" secondAttribute="centerX" multiplier="1.28" id="mwH-lJ-iD7"/>
+                        <constraint firstItem="nRV-1G-gAg" firstAttribute="centerY" secondItem="1pX-l2-aLN" secondAttribute="centerY" multiplier="1.75" id="yKk-Bq-FL6"/>
+                        <constraint firstItem="bIu-FT-E0u" firstAttribute="centerY" secondItem="1pX-l2-aLN" secondAttribute="centerY" multiplier="1.15" id="z7e-YQ-NbU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="1pX-l2-aLN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0H9-KQ-HcA"/>
+                <constraint firstItem="1pX-l2-aLN" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="3kE-de-aad"/>
+                <constraint firstItem="niA-zg-LKR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3sE-bb-w61"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="niA-zg-LKR" secondAttribute="bottom" id="FtZ-r5-WFy"/>
+                <constraint firstItem="niA-zg-LKR" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="I76-ks-D9N"/>
+                <constraint firstItem="1pX-l2-aLN" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Ikz-Jh-kl7"/>
+                <constraint firstItem="niA-zg-LKR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Tg5-0c-9Y6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gamescoreback" width="1089" height="1101"/>
+        <image name="st_bt01" width="404" height="183"/>
+    </resources>
+</document>

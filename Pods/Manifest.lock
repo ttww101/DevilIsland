@@ -1,0 +1,51 @@
+PODS:
+  - Alamofire (4.8.2)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - JCore (2.0.2)
+  - JPush (3.2.1):
+    - JCore (< 3.0.0, >= 2.0.0)
+  - LeanCloud (16.1.0):
+    - LeanCloud/IM (= 16.1.0)
+    - LeanCloud/Storage (= 16.1.0)
+  - LeanCloud/IM (16.1.0):
+    - FMDB (~> 2.7.0)
+    - LeanCloud/Storage
+    - Starscream (~> 3.1.0)
+    - SwiftProtobuf (~> 1.5.0)
+  - LeanCloud/Storage (16.1.0):
+    - Alamofire (~> 4.8.0)
+  - SnapKit (5.0.0)
+  - Starscream (3.1.0)
+  - SwiftProtobuf (1.5.0)
+
+DEPENDENCIES:
+  - JPush
+  - LeanCloud
+  - SnapKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - FMDB
+    - JCore
+    - JPush
+    - LeanCloud
+    - SnapKit
+    - Starscream
+    - SwiftProtobuf
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  JCore: d4cbe6d178eaeb0ed263e42a6ebcb617855ef7cb
+  JPush: a1ff8b8ec53fa3419b414946e4db4efa313baeae
+  LeanCloud: f9c74424b819acaed6b1524050f98c79bceb2b9b
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+  Starscream: 08172b481e145289c4930cb567230fb55897cfa4
+  SwiftProtobuf: 241400280f912735c1e1b9fe675fdd2c6c4d42e2
+
+PODFILE CHECKSUM: 48d660b874d9416465b1c59a0a394834f294fbb0
+
+COCOAPODS: 1.6.1

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DevilIsland" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TXL-3S-fob">
+                                <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_h" translatesAutoresizingMaskIntoConstraints="NO" id="iy9-8u-h6g">
+                                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LxS-Ei-wEo">
+                                        <rect key="frame" x="294.33333333333331" y="274.33333333333331" width="147.33333333333331" height="72.333333333333314"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="LxS-Ei-wEo" secondAttribute="height" multiplier="672:330" id="Js7-mU-JQD"/>
+                                        </constraints>
+                                        <state key="normal" image="start_bt"/>
+                                        <connections>
+                                            <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ix2-2Q-GHR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fn0-Je-lfm">
+                                        <rect key="frame" x="668" y="8" width="60" height="82.666666666666671"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="fn0-Je-lfm" secondAttribute="height" multiplier="186:256" id="tdK-8M-4j0"/>
+                                        </constraints>
+                                        <state key="normal" image="set"/>
+                                        <connections>
+                                            <action selector="settingClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hnR-zN-Qr1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="iy9-8u-h6g" secondAttribute="trailing" id="2HK-s9-fcw"/>
+                                    <constraint firstItem="iy9-8u-h6g" firstAttribute="top" secondItem="TXL-3S-fob" secondAttribute="top" id="2xy-Ov-SlF"/>
+                                    <constraint firstItem="LxS-Ei-wEo" firstAttribute="centerX" secondItem="TXL-3S-fob" secondAttribute="centerX" id="43m-Ya-Mka"/>
+                                    <constraint firstAttribute="width" secondItem="TXL-3S-fob" secondAttribute="height" multiplier="2208:1242" id="5Vj-Q5-RnW"/>
+                                    <constraint firstAttribute="trailing" secondItem="fn0-Je-lfm" secondAttribute="trailing" constant="8" id="Clp-on-6JP"/>
+                                    <constraint firstItem="fn0-Je-lfm" firstAttribute="top" secondItem="TXL-3S-fob" secondAttribute="top" constant="8" id="Kyb-YD-5st"/>
+                                    <constraint firstItem="fn0-Je-lfm" firstAttribute="height" secondItem="TXL-3S-fob" secondAttribute="height" multiplier="0.2" id="Px5-wB-PRv"/>
+                                    <constraint firstAttribute="bottom" secondItem="iy9-8u-h6g" secondAttribute="bottom" id="Tcx-jw-SaZ"/>
+                                    <constraint firstItem="LxS-Ei-wEo" firstAttribute="width" secondItem="TXL-3S-fob" secondAttribute="width" multiplier="0.2" id="hGH-VU-z7z"/>
+                                    <constraint firstItem="iy9-8u-h6g" firstAttribute="leading" secondItem="TXL-3S-fob" secondAttribute="leading" id="l6V-jF-9AA"/>
+                                    <constraint firstItem="LxS-Ei-wEo" firstAttribute="centerY" secondItem="TXL-3S-fob" secondAttribute="centerY" multiplier="1.5" id="xfz-Zj-B3B"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TXL-3S-fob" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="D3n-8a-OHj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TXL-3S-fob" secondAttribute="bottom" id="JDT-y6-8lO"/>
+                            <constraint firstItem="TXL-3S-fob" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Yjc-WP-Vd9"/>
+                            <constraint firstItem="TXL-3S-fob" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="siZ-eV-3xM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back_h" width="2208" height="1242"/>
+        <image name="set" width="186" height="259"/>
+        <image name="start_bt" width="672" height="330"/>
+    </resources>
+</document>
